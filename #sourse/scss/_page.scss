@@ -1,0 +1,59 @@
+.page {
+	.wrapper,
+	.breadcrumb__wrapper {
+		width: 100%;
+		max-width: $maxWidth;
+	}
+	.wrapper {
+		background-color: #fff;
+	}
+	.wrapper-inner,
+	.about-page {
+		max-width: 1140px;
+		width: 85%;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	section {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 45px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		h2,
+		p,
+		ul {
+			width: 85%;
+			margin-right: auto;
+		}
+
+		h2 {
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			color: $blue;
+			margin-bottom: 15px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		span {
+			display: inline-block;
+			float: left;
+			height: 280px;
+			margin: 0 30px 18px 0;
+
+			img {
+				display: block;
+				height: 100%;
+			}
+		}
+	}
+}

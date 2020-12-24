@@ -1,0 +1,111 @@
+$globe_size: 200px;
+
+.globe-container,
+.globe {
+	width: $globe_size;
+	height: $globe_size;
+}
+.globe-container {
+	position: relative;  
+	display: inline-block;
+	margin: 30px;
+	transform: scale(2.5);
+	position: relative;  
+	display: block;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%; 
+	left: 50%;
+	margin-left: calc(-#{$globe_size} / 2);
+	margin-top: calc(-#{$globe_size} / 2);
+	z-index: -1;
+}
+.globe {
+	
+}
+.globe-worldmap,
+.globe-worldmap-front,
+.globe-worldmap-back,
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+	position: absolute; 
+	display: block; 
+	margin: 0;
+	// margin: auto;
+}
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+	left: 0; 
+	top: 0; 
+	width: $globe_size; 
+	height: $globe_size;
+	background-position: 0 0; 
+	background-repeat: no-repeat;
+}
+.globe-worldmap {
+	left: 0; 
+	top: 0; 
+	width: $globe_size; 
+	height: $globe_size; 
+	overflow: hidden;
+	border-radius: 50%;
+}
+.globe-worldmap-front,
+.globe-worldmap-back {
+	left: 0; 
+	top: 0; 
+	width: 1000px; 
+	height: 200px; 
+	overflow: visible;
+	background-image: url('../img/wow-svg/worldmap-1.svg');
+	background-repeat: no-repeat;
+}
+.globe-outer-shadow { 
+	left: 0; 
+	// top: 186px;
+	// top: calc(50% + 186px); 
+	top: 200px;
+	width: $globe_size; 
+	height: 30px;
+	background-image: url('../img/wow-svg/outer_shadow.svg');
+}
+.globe-inner-shadow { 
+	background-image: url('../img/wow-svg/inner_shadow-1.svg');
+}
+
+.globe-sphere {
+	background-image:url('../img/wow-svg/sphere-6.svg')
+}
+ 
+.globe-worldmap-front { 
+	background-position: 0px 0px;
+	animation: textureSpinreverse 50s linear infinite;
+}
+.globe-worldmap-back { 
+	background-position: 0px -220px;
+	animation: textureSpin 50s linear infinite;
+}
+ 
+@keyframes textureSpin {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-47.5%);
+	}
+}
+@keyframes textureSpinreverse {
+	from {
+		transform: translateX(-47.5%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
