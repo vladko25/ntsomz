@@ -2,7 +2,7 @@
 	.wrapper,
 	.breadcrumb__wrapper {
 		width: 100%;
-		max-width: $maxWidth;
+		max-width: #{$maxWidth + px};
 	}
 	.wrapper {
 		background-color: #fff;

@@ -22,7 +22,7 @@
 	}
 	/* .footer__container */
 	&__container {
-		max-width: $maxWidth;
+		max-width: #{$maxWidth + px};
 		width: 85%;
 		margin: 0 auto;
 		text-align: center;
