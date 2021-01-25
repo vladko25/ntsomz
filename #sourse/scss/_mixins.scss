@@ -42,17 +42,17 @@ $blue2: rgba(0,166,228,1.0);
 		// Только если меньше контейнера
 		#{$property}: $startSize + px;
 		@media (max-width: #{$maxWidthContainer + px}) {
-			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}) );
+			#{$property}: calc(#{$minSize + rem} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}) );
 		}
 	} @else if $type==2 {
 		// Только если больше контейнера
 		#{$property}: $startSize + px;
 		@media (min-width: #{$maxWidthContainer + px}) {
-			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}) );
+			#{$property}: calc(#{$minSize + rem} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}) );
 		}
 	} @else  {
 		// Всегда
-		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}) );
+		#{$property}: calc(#{$minSize + rem} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}) );
 	}
 }
 

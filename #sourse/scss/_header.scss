@@ -8,6 +8,7 @@
 
 html {
 	min-height: 100%;
+	font-size: 1.25vw;
 }
 
 html, body {
@@ -503,8 +504,7 @@ body {
 		&__maintitle,
 		&__title {
 			flex: 1 1 100%;
-			// font-size: 0.75rem;
-			@include adaptiv-font-with-customizable-max-width(28, 10, 4960);
+			@include adaptiv-value('font-size', 2, 0.6, 0);
 			font-weight: 400;
 			line-height: 140%;
 			margin: 0;
@@ -514,24 +514,24 @@ body {
 			@media (max-width: 767px) {
 			}
 			a {
+				@include adaptiv-value('font-size', 2, 0.6, 0);
 				text-decoration: none;
 				color: #fff;
 
 				@media (max-width: 767px) {
 				}
 			}
-			/* .header__desc */
-			&__desc {
-				// font-size: 0.75rem;
-				@include adaptiv-font-with-customizable-max-width(28, 10, 4960);
-				line-height: 29px;
-				display: inline-block;
-				margin: 0;
-				text-align: left;
+		}
+		/* .header__desc */
+		&__desc {
+			@include adaptiv-value('font-size', 2, 0.6, 0);
+			line-height: 140%;
+			display: inline-block;
+			margin: 0;
+			text-align: left;
 
-				@media (max-width: 767px) {
-					font-size: 0px;
-				}
+			@media (max-width: 767px) {
+				font-size: 0px;
 			}
 		}
 		.title-page {
@@ -638,7 +638,7 @@ body {
 				margin: 0 5px 10px;
 				padding-bottom: 10px;
 				color: #fff;
-				@include adaptiv-font-with-customizable-max-width(22, 10, 4960);
+				@include adaptiv-value('font-size', 14, 0.75, 0);
 				font-weight: 300;
 				text-transform: uppercase;
 				margin-bottom: 10px;
@@ -681,7 +681,6 @@ body {
 				height: 100%;
 				display: block;
 				z-index: 1;
-				// background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
 				&:hover {
 					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0), rgba(0, 166, 228, 0.8));
 				}
@@ -736,24 +735,21 @@ body {
 			/* .top-post__title */
 			&__title {
 				font-weight: 700;
-				// font-size: 1rem;
 				line-height: 120%;
 				margin-top: 0.5em;
-				@include adaptiv-font-with-customizable-max-width(42, 10, 4960);
+				@include adaptiv-value('font-size', 4, 0.8, 0);
 			}
 			/* .top-post__desc */
 			&__desc {
-				// font-size: 0.8rem;
 				line-height: 140%;
 				margin-top: 0.4em;
-				@include adaptiv-font-with-customizable-max-width(28, 8, 4960);
+				@include adaptiv-value('font-size', 2, 0.6, 0);
 			}
 			/* .top-post__date */
 			&__date {
-				// font-size: 0.6rem;
 				line-height: 140%;
 				margin-top: 0.5em;
-				@include adaptiv-font-with-customizable-max-width(24, 6, 4960);
+				@include adaptiv-value('font-size', 1.8, 0.55, 0);
 				order: -1;
 			}
 		}
