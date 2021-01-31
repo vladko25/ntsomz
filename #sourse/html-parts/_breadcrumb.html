@@ -1,14 +1,24 @@
 			<div class="breadcrumb__wrapper">
 				<script>
-					breadcrumb.main = [
-						{
-							"text": 'Главная',
-							"link": '/',
-							'class': 'breadcrumb-home'
+					/*-----------------------*/
+					/*-------breadcrumb-------*/
+					/*-----------------------*/
+					try {
+						function create_breadcrumb() {
+							breadcrumb.main = [
+								{
+									"text": 'Главная',
+									"link": '/',
+									'class': 'breadcrumb-home'
+								}
+							],
+							breadcrumb.element = 'ul',
+							breadcrumb.build();
 						}
-					];
-					breadcrumb.element = 'ul';
-					breadcrumb.build();
+					} catch (err) {
+						console.log(err.name);
+						console.log(err.messege);
+					}
 				</script>
 			</div>
 
