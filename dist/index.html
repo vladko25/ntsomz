@@ -6,8 +6,10 @@
 	<title>Научный центр оператиного мониторинга Земли</title>
 	<meta http-equiv="Description" content="Официальный сайт Научного Центра оперативного мониторинга Земли (НЦ ОМЗ). Информация о Центре, перечень услуг и стоимость, контакты, вакансии. Информация для клиентов, электронный католог изображений, ответы на вопросы, поддержка, форум. Новости дня по разделам: новости Центра, новости Космоса, разное.">
 	<meta http-equiv="Keywords" content="Новости, новости Центра, Новости Космоса, РКА, европейское космическое агентство, федерельное космическое агентство, Памела, Ресурс ДК, Метеор, Сич, Океан, Монитор, статьи, научные труды, авторы, ДЗЗ, дистанционное зондирование земли,  Италия, Франция, США, Америка, космос, спутники, гелифизические исследования, наводнения, пожары, катологизация, архивация информации, Россия, интернет, технологии, hi-tech, партнеры, проекты, центры приема информации, НИИ ТП, наука, Совминформспутник, происшествия, галереи, связь, изображения, форум, НЦ ОМЗ">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link href="assets/css/style.css" rel="stylesheet">
-	<!-- <script src="assets/js/breadcrumb.min.js" defer></script> -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+	<script src="assets/js/breadcrumb.min.js" defer></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
 	<script src="assets/js/particles.min.js" defer></script>
 	<script src="assets/js/fslightbox.js" defer></script>
@@ -23,6 +25,7 @@
 		</h1>
 
 		<div class="header-home__bg">
+			<!-- <img src="assets/img/jpg/bg-hero.jpg"  width="100%" height="100vh" style="display: block;" alt=""> -->
 			<video autoplay loop muted width="100%" height="100%" poster="assets/img/jpg/bg-hero.jpg" class="bgvideo" id="bgvideo">
 				<source src="assets/videos/video-earth.mp4" type="video/mp4">
 			</video>
@@ -33,7 +36,7 @@
 			<div class="top-header__body">
 				<div class="top-header__logo">
 					<a href=".">
-						<img src="assets/img/png/rks-ntsomz-logo-big-white.png" alt="">
+						<img src="assets/img/png/brand/rks-ntsomz-logo-big-white.png" alt="">
 					</a>
 				</div>
 
@@ -74,17 +77,75 @@
 			<div class="top-posts">
 				<div class="main-content__section main-content__section_one">
 					<h2 class="main-content__title">Важные новости</h2>
-					<div class="top-posts__item top-post">
+
+					<div class="swiper-container top-posts__swiper">
+						<div class="swiper-wrapper top-posts__wrapper">
+							<div class="swiper-slide top-posts__slide">
+								<div class="top-posts__item top-post">
+									<a href="#" class="top-post__link"></a>
+									<div class="top-post__img">
+										<img src="assets/img/jpg/conference.jpg" alt="">
+									</div>
+									<div class="top-post__content">
+										<div class="top-post__info">
+											<span class="top-post__tag">Новости</span>
+											<span class="top-post__date">13 ноября 2020 года</span>
+										</div>
+										<div class="top-post__title">Восемнадцатая Всероссийская открытая конференция «Современные проблемы дистанционного зондирования Земли из космоса» в НЦ ОМЗ АО «Российские космические системы»</div>
+										<div class="top-post__desc">20 ноября 2020 года в НЦ ОМЗ АО «Российские космические системы» запланировано проведение в онлайн режиме заседания «Российская система спутниковых наблюдений и технологий: состояние и перспективы развития» в рамках 18-й Всероссийской открытой конференции «Современные проблемы дистанционного зондирования Земли из космоса» (организатор конференции – Институт космических исследований РАН).</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide top-posts__slide">
+								<div class="top-posts__item top-post">
+									<a href="#" class="top-post__link"></a>
+									<div class="top-post__img">
+										<img src="assets/img/jpg/conference.jpg" alt="">
+									</div>
+									<div class="top-post__content">
+										<div class="top-post__info">
+											<span class="top-post__tag">Новости</span>
+											<span class="top-post__date">13 ноября 2020 года</span>
+										</div>
+										<div class="top-post__title">Восемнадцатая Всероссийская открытая конференция «Современные проблемы дистанционного зондирования Земли из космоса» в НЦ ОМЗ АО «Российские космические системы»</div>
+										<div class="top-post__desc">20 ноября 2020 года в НЦ ОМЗ АО «Российские космические системы» запланировано проведение в онлайн режиме заседания «Российская система спутниковых наблюдений и технологий: состояние и перспективы развития» в рамках 18-й Всероссийской открытой конференции «Современные проблемы дистанционного зондирования Земли из космоса» (организатор конференции – Институт космических исследований РАН).</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide top-posts__slide">
+								<div class="top-posts__item top-post">
+									<a href="#" class="top-post__link"></a>
+									<div class="top-post__img">
+										<img src="assets/img/jpg/conference.jpg" alt="">
+									</div>
+									<div class="top-post__content">
+										<div class="top-post__info">
+											<span class="top-post__tag">Новости</span>
+											<span class="top-post__date">13 ноября 2020 года</span>
+										</div>
+										<div class="top-post__title">Восемнадцатая Всероссийская открытая конференция «Современные проблемы дистанционного зондирования Земли из космоса» в НЦ ОМЗ АО «Российские космические системы»</div>
+										<div class="top-post__desc">20 ноября 2020 года в НЦ ОМЗ АО «Российские космические системы» запланировано проведение в онлайн режиме заседания «Российская система спутниковых наблюдений и технологий: состояние и перспективы развития» в рамках 18-й Всероссийской открытой конференции «Современные проблемы дистанционного зондирования Земли из космоса» (организатор конференции – Институт космических исследований РАН).</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<!-- <div class="top-posts__item top-post">
 						<a href="#" class="top-post__link"></a>
 						<div class="top-post__img">
 							<img src="assets/img/jpg/conference.jpg" alt="">
 						</div>
 						<div class="top-post__content">
+							<div class="top-post__info">
+								<span class="top-post__tag">Новости</span>
+								<span class="top-post__date">13 ноября 2020 года</span>
+							</div>
 							<div class="top-post__title">Восемнадцатая Всероссийская открытая конференция «Современные проблемы дистанционного зондирования Земли из космоса» в НЦ ОМЗ АО «Российские космические системы»</div>
 							<div class="top-post__desc">20 ноября 2020 года в НЦ ОМЗ АО «Российские космические системы» запланировано проведение в онлайн режиме заседания «Российская система спутниковых наблюдений и технологий: состояние и перспективы развития» в рамках 18-й Всероссийской открытой конференции «Современные проблемы дистанционного зондирования Земли из космоса» (организатор конференции – Институт космических исследований РАН).</div>
-							<div class="top-post__date">13 ноября 2020 года</div>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="top-posts__item top-post">
 						<a href="#" class="top-post__link"></a>
@@ -118,7 +179,7 @@
 				<div class="main-content__section main-content__section_two">
 					<h2 class="main-content__title">Фотогалерея</h2>
 					<div class="top-posts__item top-post">
-						<a href="gallery.html" class="top-post__link"></a>
+						<a href="category-gallery.html" class="top-post__link"></a>
 						<div class="top-post__img">
 							<img src="assets/img/jpg/satellite-images.jpg" alt="">
 						</div>
@@ -130,7 +191,7 @@
 					</div>
 
 					<div class="top-posts__item top-post">
-						<a href="gallery.html" class="top-post__link"></a>
+						<a href="category-gallery.html" class="top-post__link"></a>
 						<div class="top-post__img">
 							<img src="assets/img/jpg/operational-work.jpg" alt="">
 						</div>
@@ -171,11 +232,11 @@
 	<div class="wrapper">
 
 		<section class="ntsomz-about main-section">
-			<div class="ntsomz-about__back back-box">
+			<!-- <div class="ntsomz-about__back back-box">
 				<div class="back-box__column"></div>
 				<div class="back-box__column"></div>
 				<div class="back-box__column"></div>
-			</div>
+			</div> -->
 			<div class="ntsomz-about__wrapper">
 				<div class="ntsomz-about__content-wrapper">
 					<div class="ntsomz-about__image">
@@ -191,7 +252,7 @@
 			</div>
 		</section>
 
-		<section class="ntsomz-awards main-section">
+		<!-- <section class="ntsomz-awards main-section">
 			<div class="ntsomz-awards__wrapper">
 				<div class="ntsomz-awards__box">
 					<div class="ntsomz-awards__content-wrapper">
@@ -268,14 +329,14 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="ntsomz-services main-section">
-			<div class="ntsomz-services__back back-box">
+			<!-- <div class="ntsomz-services__back back-box">
 				<div class="back-box__column"></div>
 				<div class="back-box__column"></div>
 				<div class="back-box__column"></div>
-			</div>
+			</div> -->
 			<div class="ntsomz-services__wrapper">
 				<div class="ntsomz-services__box">
 					<div class="ntsomz-services__image">
@@ -361,7 +422,7 @@
 			</div>
 		</section>
 
-		<section class="ntsomz-bosses main-section">
+		<!-- <section class="ntsomz-bosses main-section">
 			<div class="ntsomz-bosses__wrapper">
 				<div class="ntsomz-bosses__box">
 					<div class="ntsomz-bosses__content-wrapper">
@@ -412,7 +473,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="ntsomz-news main-section">
 			<div class="ntsomz-news__wrapper">
@@ -471,139 +532,10 @@
 			</div>
 		</section>
 
-		<!-- <section class="ntsomz-operational-work main-section">
-			<div class="ntsomz-operational-work__wrapper">
-				<h2 class="ntsomz-operational-work__title">Оперативная деятельность</h2>
-				<div class="flex-container">
-				<div class="flex-container__item-wrapper">
-					<div class="flex-container__item ntsomz-item">
-						<div class="ntsomz-item__img">
-							<img src="assets/img/main-operational-work/1.gif" alt="">
-						</div>
-						<h3 class="ntsomz-item__title">
-							<a href="#">Ураган «IOTA», Карибское море</a>
-						</h3>
-						<span class="ntsomz-item__post-date">
-							17 ноября 2020 года
-						</span>
-						<p class="ntsomz-item__desc">
-							Съемка с КА «Метеор-М» №2
-						</p>
-					</div>
-				</div>
-				<div class="flex-container__item-wrapper">
-					<div class="flex-container__item ntsomz-item">
-						<div class="ntsomz-item__img">
-							<img src="assets/img/main-operational-work/2.gif" alt="">
-						</div>
-						<h3 class="ntsomz-item__title">
-							<a href="#">Тайфун «VAMCO», Тихий океан</a>
-						</h3>
-						<span class="ntsomz-item__post-date">
-							14 ноября 2020 года
-						</span>
-						<p class="ntsomz-item__desc">
-							Съемка с КА «Метеор-М» №2
-						</p>
-					</div>
-				</div>
-				<div class="flex-container__item-wrapper">
-					<div class="flex-container__item ntsomz-item">
-						<div class="ntsomz-item__img">
-							<img src="assets/img/main-operational-work/3.gif" alt="">
-						</div>
-						<h3 class="ntsomz-item__title">
-							<a href="#">Пожары, Россия, Республика Саха (Якутия)</a>
-						</h3>
-						<span class="ntsomz-item__post-date">
-							23 сентября 2020 года
-						</span>
-						<p class="ntsomz-item__desc">
-							Съемка с КА «Метеор-М» №2
-						</p>
-					</div>
-				</div>
-				<div class="flex-container__item-wrapper">
-					<div class="flex-container__item ntsomz-item">
-						<div class="ntsomz-item__img">
-							<img src="assets/img/main-operational-work/4.gif" alt="">
-						</div>
-						<h3 class="ntsomz-item__title">
-							<a href="#">Площадь, отснятая за 18.11.2020</a>
-						</h3>
-						<span class="ntsomz-item__post-date">
 
-						</span>
-						<p class="ntsomz-item__desc">
-
-						</p>
-					</div>
-				</div>
-				</div>
-				<p class="ntsomz-btn"><a href="#">Все проекты</a></p>
-			</div>
-		</section> -->
-
-		<!-- <main class="main">
-
-		</main> -->
-
-		<!-- <aside class="side">
-				<div class="gallery">
-					<ul class="gallery__menu">
-						<li class="gallery__link">
-							<a href="#">
-								Галерея «Ресурс-П»
-							</a>
-						</li>
-						<li class="gallery__link">
-							<a href="#">
-								Галерея «Канопус-В»
-							</a>
-						</li>
-						<li class="gallery__link">
-							<a href="#">
-								Галерея «Электро-Л»
-							</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="events-box">
-					<h4 class="events-box__title">
-						<a href="#">Календарь конференций</a>
-					</h4>
-					<p class="events-box__text">
-						Выставки, научно-технические совещания, конференции, международные конгрессы и семинары
-					</p>
-				</div>
-
-				<div class="interesting">
-					<a href="http://gptl.ru" class="interesting__img">
-						<img src="assets/img/aside-banner/geoportal_fka_260x95.jpg">
-					</a>
-					<a href="http://bbp.ntsomz.ru/" class="interesting__img">
-						<img src="assets/img/aside-banner/banner_bbp_260x95_ru.jpg">
-					</a>
-					<a href="http://electro.ntsomz.ru/" class="interesting__img">
-						<img src="assets/img/aside-banner/electro03032014.jpg">
-					</a>
-				</div>
-
-				<div class="product-offering">
-					<figure>
-						<a href="#">
-							<img src="assets/img/aside/antenn.gif" alt="">
-						</a>
-						<figcaption>
-							Станции приема космической информации
-						</figcaption>
-					</figure>
-				</div>
-
-		</aside> -->
 	</div>
 
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A85dd9a2de8fcc41ac3fec7e339cd214a8c70cfecb324c39546da4b4e30171661&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
 	<footer class="footer">
 		<!-- <div id="footer-particles"></div> -->
 		<div class="container footer__container">
